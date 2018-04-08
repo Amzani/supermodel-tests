@@ -1,0 +1,93 @@
+$id: http://adidas.com/distribution-centers/core/DeliveryNoteConfirmation
+
+title: Delivery Note Confirmation
+description: Definition of the delivery note confirmation at Adidas.
+type: object
+
+properties:
+  documentType:
+    type: string
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  deliveryNumber:
+    type: number
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  deliveryStatus:
+    type: number
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  deliveryDate:
+    type: string
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  salesOrganization:
+    type: string
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  distributionChannel:
+    type: string
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  division:
+    type: string
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  plannedGoodsMovementDate:
+    type: string
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  actualGoodsMovementDate:
+    type: string
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  creationDate:
+    type: string
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  creationTime:
+    type: string
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  textList:
+    type: array
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+    items:
+      $ref: '#/definitions/textItem'
+  partnersList:
+    type: array
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+    items:
+      $ref: 'http://adidas.com/distribution-centers/core/BusinessPartner'
+  valueAddedServiceList:
+    type: array
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+    items:
+      $ref: 'http://adidas.com/distribution-centers/core/ValueAddedService'
+  priceConditionList:
+    type: array
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+    items:
+      $ref: 'http://adidas.com/distribution-centers/core/PriceCondition'
+  
+
+required:
+  - documentType
+  - deliveryNumber
+  - deliveryStatus
+
+examples:
+  - documentType: "ABC"
+    deliveryNumber: 123
+    deliveryStatus: "sent"
+    salesOrganization: "0681"
+    distributionChannel: "1234"
+    division: "FGFGG"
+    plannedGoodsMovementDate: "2018-05-01"
+    actualGoodsMovementDate: "2018-05-01"
+    creationDate: "2018-05-01"
+    creationTime: "2018-05-01T12:00:27+00:20"
+    partnersList: [{}]
+    textList: [{}]
+    valueAddedServiceList: [{}]
+    priceConditionList: [{}]
+
+definitions:
+  textItem:
+    type: object
+    properties:
+      textType:
+        type: string
+      lineCount:
+        type: integer
+      value:
+        type: string

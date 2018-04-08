@@ -1,0 +1,81 @@
+$id: http://adidas.com/distribution-centers/core/BusinessAddress
+
+title: Business Address
+description: Definition of a Business Address
+type: object
+
+properties:
+  title:
+    type: string
+  names:
+    type: string
+  careOfName:
+    type: string
+  houseNumber:
+    type: number
+  houseExtendedNumber:
+    type: number
+  street:
+    type: string
+  extendedStreets:
+    type: array
+  district:
+    type: string
+  postCode:
+    type: string
+  city:
+    type: string
+  countryCode:
+    type: string
+  countryDescription:
+    type: string
+  regionCode:
+    type: string
+  phone:
+    type: string
+  fax:
+    type: string
+  email:
+    type: string
+  accountNumberOfVendor:
+    type: string
+  validationFlag:
+    type: string
+  addressIndicator:
+    type: string
+  buyingGroupMemberShip:
+    type: string
+  remark:
+    type: string
+  
+  
+required:
+  - title
+  - name
+  - careOfName
+  - houseNumber
+  - houseExtendedNumber
+  - street
+
+examples:
+  - title: "Mr."
+    names: ['quis', 'labor', 'lorem']
+    careOfName: 'lorem'
+    houseNumber: 4
+    houseExtendedNumber: 12
+    street: 'Avenue de la paix'
+    extendedStreets: ['Lorem labor', 'labor lorem']
+    district: '2A'
+    postCode: '20000'
+    city: 'Ajaccio'
+    countryCode: "FR"
+    countryDescription: "France"
+    regionCode: "20"
+    phone: "+33611111111"
+    fax: "+336000000000"
+    email: "contact@zz.com"
+    accountNumberOfVendor: 123232
+    validationFlag: "1234"
+    addressIndicator: "lorem"
+    buyingGroupMemberShip: "123"
+    remark: ""

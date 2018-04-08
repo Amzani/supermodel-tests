@@ -1,0 +1,53 @@
+$id: http://adidas.com/distribution-centers/core/PriceCondition
+
+title: Price Condition
+description: Definition of the Price Condition.
+type: object
+
+properties:
+  validFrom:
+    type: string
+  validTo:
+    type: string
+  purpose:
+    type: string
+  currency:
+    type: string
+  kind:
+    type: string
+  value:
+    type: string
+  unit:
+    type: string
+  pricingUnit:
+    type: string
+  class:
+    type: string
+  calculationType:
+    type: string
+  unitOfMeasure:
+    type: string
+  deletionFlag:
+    type: string
+
+required:
+  - validFrom
+  - validTo
+  - purpose
+  - currency
+
+examples:
+  - validFrom: "2018-05-01"
+    validTo: "2018-05-23"
+    purpose: "Sit quis labore ipsum ex occaecat tempor quis minim cupidatat nulla."
+    currency: "EUR"
+    kind: "quis"
+    value: "Sit quis labore ipsum ex occaecat tempor"
+    unit: "ex"
+    pricingUnit: "EUR"
+    class: "ipsum"
+    calculationType: "ipsum"
+    unitOfMeasure: "tempor"
+    deletionFlag: "D"
+  
+  

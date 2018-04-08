@@ -1,0 +1,69 @@
+$id: http://adidas.com/api/HAL
+
+title: HAL
+description: JSON Hypertext Application Language. Definition of [HAL message format](https://tools.ietf.org/html/draft-kelly-json-hal-08)
+type: object
+
+properties:
+  _links:
+    type: object
+    additionalProperties:
+      anyOf:
+      - $ref: '#/definitions/halLinkObject'
+      - type: array
+        items:
+          - $ref: '#/definitions/halLinkObject'
+    properties:
+      curies:
+        anyOf:
+          - $ref: '#/definitions/halCuriesLink'
+          - type: array
+            items:
+              - $ref: '#/definitions/halCuriesLink'
+  _embedded:
+    type: object
+    additionalProperties:
+      anyOf:
+        - $ref: '#/'
+        - type: array
+          items:
+            - $ref: '#/'
+
+definitions:
+  halLinkObject:
+    title: HAL Link Object
+    type: object
+    properties:
+      href:
+        type: string
+      templated:
+        type: boolean
+      #
+      # WARN: Some version of OAS parser can have problem with property being called "type"
+      # resulting in the error 'Schema "type" key must be a string'
+      type:
+       type: string
+      deprecation:
+        type: string
+      name:
+        type: string
+      profile:
+        type: string
+      title:
+        type: string
+      hreflang:
+        type: string
+    required:
+      - href
+
+  halCuriesLink:
+    title: HAL Curies Link
+    allOf:
+      - type: object
+        properties:
+          templated:
+            enum:
+              - true
+        required:
+          - templated
+      - $ref: '#/definitions/halLinkObject'

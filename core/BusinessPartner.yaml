@@ -1,0 +1,72 @@
+$id: http://adidas.com/distribution-centers/core/BusinessPartner
+
+title: Business Partner
+description: Definition of a Business Partner
+type: object
+
+properties:
+  id:
+    type: string
+  role:
+    type: string
+  externalCustomerIdentification:
+    type: string
+  vatNumber:
+    type: string
+  shipToArea:
+    type: string
+  language:
+    type: string
+  customerGroup:
+    type: integer
+  address:
+    $ref: http://adidas.com/distribution-centers/core/BusinessAddress
+
+required:
+  - id
+  - role
+  - externalCustomerIdentification
+  - vatNumber
+  - shipToArea
+  - language
+  - customerGroup
+  - address
+
+examples:
+  - id: "ABC"
+    role: "lorem"
+    externalCustomerIdentification: "XLKPL"
+    vatNumber: "12-X-ABC"
+    shipToArea: "FR"
+    language: "FR"
+    customerGroup: 123
+    email: 
+    address: 
+      - title: "Mr."
+        names: ['quis', 'labor', 'lorem']
+        careOfName: 'lorem'
+        houseNumber: 4
+        houseExtendedNumber: 12
+        street: 'Avenue de la paix'
+        extendedStreets: ['Lorem labor', 'labor lorem']
+        district: '2A'
+        postCode: '20000'
+        city: 'Ajaccio'
+        countryCode: "FR"
+        countryDescription: "France"
+        regionCode: "20"
+        phone: "+33611111111"
+        fax: "+336000000000"
+        email: "contact@zz.com"
+        accountNumberOfVendor: 123232
+        validationFlag: "1234"
+        addressIndicator: "lorem"
+        buyingGroupMemberShip: "123"
+        remark: ""
+
+
+
+
+
+
+  

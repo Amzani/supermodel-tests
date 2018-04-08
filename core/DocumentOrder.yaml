@@ -1,0 +1,28 @@
+$id: http://adidas.com/distribution-centers/core/DocumentOrder
+
+title: DocumentOrder
+description: Definition of a Business Partner
+
+type: object
+
+properties:
+  id:
+    type: string
+  docType:
+    type: string
+  item:
+    type: string
+  line:
+    type: string
+
+required:
+  - id
+  - docType
+  - item
+  - line
+
+examples:
+  - id: "abc"
+    docType: "lorem"
+    item: "xxx"
+    line: "Lorem"

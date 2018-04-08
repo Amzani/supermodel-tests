@@ -1,0 +1,26 @@
+$id: http://adidas.com/distribution-centers/core/ValueAddedService
+
+title: Value Added Service
+description: Definition of the Value Added Service.
+type: object
+
+properties:
+  vasType:
+    type: string
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  vasCode:
+    type: string
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  vasDescription:
+    type: string
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  vasMaterial:
+    type: string
+    description: 'Repellat eos distinctio cum sed voluptatibus.'
+  fields:
+    type: array
+    items:
+      type: string
+
+  
+  
