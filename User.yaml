@@ -1,0 +1,15 @@
+$id: http://adidas.com/User
+
+title: User model
+description: Definition of a User
+type: object
+
+properties:
+  title:
+    type: string
+  partner:
+    $ref: http://supermodel.appyala.com/core/BusinessPartner
+  
+examples:
+  - title: "Sam"
+    partner: {}
