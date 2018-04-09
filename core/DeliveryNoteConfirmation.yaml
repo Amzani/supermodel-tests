@@ -1,4 +1,4 @@
-$id: http://adidas.com/distribution-centers/core/DeliveryNoteConfirmation
+$id: http://adidas.com/core/DeliveryNoteConfirmation
 
 title: Delivery Note Confirmation
 description: Definition of the delivery note confirmation at Adidas.
@@ -47,17 +47,17 @@ properties:
     type: array
     description: 'Repellat eos distinctio cum sed voluptatibus.'
     items:
-      $ref: 'http://adidas.com/distribution-centers/core/BusinessPartner'
+      $ref: 'http://adidas.com/core/BusinessPartner'
   valueAddedServiceList:
     type: array
     description: 'Repellat eos distinctio cum sed voluptatibus.'
     items:
-      $ref: 'http://adidas.com/distribution-centers/core/ValueAddedService'
+      $ref: 'http://adidas.com/core/ValueAddedService'
   priceConditionList:
     type: array
     description: 'Repellat eos distinctio cum sed voluptatibus.'
     items:
-      $ref: 'http://adidas.com/distribution-centers/core/PriceCondition'
+      $ref: 'http://adidas.com/core/PriceCondition'
   
 
 required:

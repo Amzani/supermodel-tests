@@ -1,4 +1,4 @@
-$id: http://adidas.com/User
+$id: http://adidas.com/order/User
 
 title: User model
 description: Definition of a User
@@ -8,7 +8,7 @@ properties:
   title:
     type: string
   partner:
-    $ref: http://supermodel.appyala.com/core/BusinessPartner
+    $ref: http://adidas.com/core/BusinessPartner
   
 examples:
   - title: "Sam"

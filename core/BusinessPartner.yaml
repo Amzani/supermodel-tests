@@ -1,4 +1,4 @@
-$id: http://supermodel.appyala.com/core/BusinessPartner
+$id: http://adidas.com/core/BusinessPartner
 
 title: Business Partner
 description: Definition of a Business Partner
@@ -20,7 +20,7 @@ properties:
   customerGroup:
     type: integer
   address:
-    $ref: http://adidas.com/distribution-centers/core/BusinessAddress
+    $ref: http://adidas.com/core/BusinessAddress
 
 required:
   - id
